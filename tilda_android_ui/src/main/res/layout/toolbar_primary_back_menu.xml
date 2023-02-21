@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?colorPrimary"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:elevation="@dimen/_4sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_primary_square_default"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="?colorLight" />
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="?colorLight"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_primary_square_default"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_more_vertical"
+            app:tint="?colorLight" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
